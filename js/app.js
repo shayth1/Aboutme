@@ -3,7 +3,7 @@ var Name = prompt("What's your name?").toLowerCase();
 alert("Welcome " + Name);
 confirm("answer with y/n");
 
-// score:
+
 var score = 0;
 
 var Qus1 = prompt("my age is 30? y/n");
@@ -56,21 +56,13 @@ if (Qus5.toLowerCase() === "y") {
 
     alert("oops thats not right");
 }
-//family array:
-// var family = ["saif","zaid","raad","ahmed"];
-// var Qus6 = prompt("guess my lucky number note that you have only 4 attempts");
-// if (Qus6 == lucky) {
-
 
 var lucky = 100;
 for (var attempt = 1; attempt <= 4; attempt++) {
     var Qus6 = prompt('guess my lucky number note that you have only 4 attempts');
     if (parseInt(Qus6) === lucky) {
         alert("You are right");
-
         score++;
-
-        break;
     } else if (parseInt(Qus6) > lucky) {
         alert("too high");
         console.log("too high");
